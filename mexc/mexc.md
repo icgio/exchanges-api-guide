@@ -10,23 +10,16 @@ Go to the official MEXC website and log in using your account credentials.
 ![API Management Menu](https://raw.githubusercontent.com/icgio/exchanges-api-guide/refs/heads/main/mexc/assets/screenshots/Screenshot%201.png)
 
 ## Step 3: Create a New API Key
-1. Click on **Create API**.
-2. Enter an **API Name / Label** (e.g., “MM Bot”, “Liquidity Bot”, or project name).
-3. Add an **IP whitelist** and include the IPs provided by the ICG Trading team (**separate each IP using a comma without spaces**).
+1. Click **Create API** and enter an **API Name / Label** (e.g., “MM Bot”, “Liquidity Bot”, or your project name).
+2. Add the required **IP whitelist**, inserting all IPs provided by the ICG Trading team, **separated by commas with no spaces**.
+3. Set the **API permissions** according to your use case. For Spot access, enable:
+   - View Account Details
+   - View Order Details
+   - Trade
+   - View Deposit/Withdrawal Details
+   - Read Transfer Information
 
 ![Create API Settings](https://raw.githubusercontent.com/icgio/exchanges-api-guide/refs/heads/main/mexc/assets/screenshots/Screenshot%202.png)
-
-## Step 4: Set API Permissions
-Choose the following permissions based on your use case:
-
-![API Permissions](https://raw.githubusercontent.com/icgio/exchanges-api-guide/refs/heads/main/mexc/assets/screenshots/Screenshot%203.png)
-
-### Spot Access
-- View Account Details
-- View Order Details
-- Trade
-- View Deposit/Withdrawal Details
-- Read transfer information
 
 > **Important:** Do **NOT** enable withdrawals for security reasons.
 
@@ -34,6 +27,8 @@ Choose the following permissions based on your use case:
 Complete the required security checks:
 - Email verification code
 - Google Authenticator (2FA)
+
+![API Permissions](https://raw.githubusercontent.com/icgio/exchanges-api-guide/refs/heads/main/mexc/assets/screenshots/Screenshot%203.png)
 
 ## Step 6: Save API Credentials
 After creation, MEXC will display:
